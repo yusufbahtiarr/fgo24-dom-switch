@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+button {
+  border: unset;
+  cursor: pointer;
+  background-color: darkcyan;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
+}
+
+.container > div:first-child{
+  display: flex;
+  flex-direction: row;
+  /* gap: 130px; */
+  padding: 0 40px;
+  justify-content: space-between;
+  width: 510px;
+}
+
+.glass {
+  background-color: #fff;
+  height: 200px;
+  width: 150px;
+  border: 10px solid goldenrod;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+}
+
+.tea {
+  background-color: brown;
+}
+
+.coffee {
+  background-color: black;
+}
+
+.empty {
+  background-color: unset;
+}
+
+
+
+
