@@ -1,19 +1,9 @@
 const btn = document.querySelector('button');
-
 const glass = document.querySelectorAll('.glass');
 const text = document.querySelectorAll('.text');
 
-// glass[0].classList.add('coffee');
-// glass[0].classList.remove('coffee');
-
+// Versi 1
 btn.addEventListener('click', function(){
-  // glass.forEach((g, index) => {
-  //   if (g.classList.contains('empty')) {
-  //     console.log(`Elemen ke-${index} kosong`);
-  //   }
-  // });
-  
-  // console.log(glass.classList.contains('empty'))
   if(glass[0].classList.contains('coffee') && glass[2].classList.contains('empty')){
     glass[0].classList.remove('coffee')
     glass[2].classList.remove('empty')
@@ -59,19 +49,72 @@ btn.addEventListener('click', function(){
   }
 })
 
+// Versi 2
+const btnAll = document.querySelectorAll('.bttn')
+const btnan1 = document.getElementById('btnn1')
+const btnan2 = document.getElementById('btnn2')
+const btnan3 = document.getElementById('btnn3')
+btnan1.addEventListener('click', function(){
+  btnAll.forEach((g, index) => {
+    if (g.classList.contains('empty')) {
+      if(btnan1.classList.contains('tea')){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('tea')
+        btnAll[index].textContent = "TEA"
+        btnan1.classList.remove('tea')
+        btnan1.classList.add('empty')
+        btnan1.textContent = "EMPTY"
+      }else if((btnan1.classList.contains('coffee'))){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('coffee')
+        btnAll[index].textContent = "COFFEE"
+        btnan1.classList.remove('coffee')
+        btnan1.classList.add('empty')
+        btnan1.textContent = "EMPTY"
+    }}
+  })
+})
 
+btnan2.addEventListener('click', function(){
+  btnAll.forEach((g, index) => {
+    if (g.classList.contains('empty')) {
+      if(btnan2.classList.contains('tea')){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('tea')
+        btnAll[index].textContent = "TEA"
+        btnan2.classList.remove('tea')
+        btnan2.classList.add('empty')
+        btnan2.textContent = "EMPTY"
+      }else if((btnan2.classList.contains('coffee'))){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('coffee')
+        btnAll[index].textContent = "COFFEE"
+        btnan2.classList.remove('coffee')
+        btnan2.classList.add('empty')
+        btnan2.textContent = "EMPTY"
+      }
+    }
+  })
+})
 
-//  Lat 2
-// const btn = document.querySelector('.input>button')
-// btn.addEventListener('click', function(){
-//   const input = btn.previousElementSibling
-//   // input.setAttribute('type','text') //elemen sebelum button tapi masih sibling
-//   if(input.hasAttribute('type') && input.getAttribute('type') === 'password'){
-//     input.setAttribute('type', 'text')
-//     btn.firstElementChild.setAttribute('src','icons/eye-closed.svg')
-//   }else {
-//     input.setAttribute('type', 'password')
-//     btn.firstElementChild.setAttribute('src','icons/eye.svg')
-//   }
-
-// })
+btnan3.addEventListener('click', function(){
+  btnAll.forEach((g, index) => {
+    if (g.classList.contains('empty')) {
+      if(btnan3.classList.contains('tea')){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('tea')
+        btnAll[index].textContent = "TEA"
+        btnan3.classList.remove('tea')
+        btnan3.classList.add('empty')
+        btnan3.textContent = "EMPTY"
+      }else if((btnan3.classList.contains('coffee'))){
+        btnAll[index].classList.remove('empty')
+        btnAll[index].classList.add('coffee')
+        btnAll[index].textContent = "COFFEE"
+        btnan3.classList.remove('coffee')
+        btnan3.classList.add('empty')
+        btnan3.textContent = "EMPTY"
+      }
+    }
+  })
+})

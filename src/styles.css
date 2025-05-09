@@ -39,7 +39,7 @@ button {
   display: flex;
   flex-direction: row;
   /* gap: 130px; */
-  padding: 0 40px;
+  /* padding: 0 40px; */
   justify-content: space-between;
   width: 510px;
 }
@@ -53,18 +53,46 @@ button {
   border-radius: 0 0 20px 20px;
 }
 
+.text {
+  flex: 1;
+  text-align: center;
+}
 .tea {
   background-color: brown;
+  content: "TEA";
 }
 
 .coffee {
-  background-color: black;
+  background-color: #333;
+  content: "COFFEE";
 }
 
 .empty {
   background-color: unset;
+  content: "EMPTY";
 }
 
+div:last-child {
+  display: flex;
+  flex-direction: row;
+  gap : 20px
+}
 
+hr {
+  width: 510px;
+  border: 2px solid #444;
+  margin-top: 20px;
+}
+
+.bttn {
+  margin-top: 50px;
+  height: 200px;
+  width: 150px;
+  border: 10px solid goldenrod;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
+  /* background-color: #fff; */
+  color: BLACK;
+}
 
 
