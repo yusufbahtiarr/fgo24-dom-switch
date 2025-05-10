@@ -1,7 +1,9 @@
-# Javascript DOM Project - Move Glass
+# Javascript DOM Project - Move Water to Another Glass
 This repository contains Javascript DOM Practical Project 2 with some basic examples. In this javascript dom application, the application is dynamic element creation.
 
 ## Preview
+Check out this project: [Javascript DOM Project - Move Water to Another Glass](https://yusufbahtiarr.github.io/fgo24-dom-switch/)  
+
 ![Preview](src/Screenshot.png)
 
 ## How to Run this project
